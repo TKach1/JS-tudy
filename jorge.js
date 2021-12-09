@@ -45,7 +45,6 @@ function Main() {
     console.log("4 - Iniciar uma revolução russa")
     console.log("5 - Fugir (Sair do game)");
     getdef = goblin.defesa;
-    console.log(defesa2);
     jogada = jogada + 1;
   }else if (jogada%2 == 1) {
     console.log( agiota.nome + " apareceu!");
@@ -56,7 +55,6 @@ function Main() {
     console.log("4 - Iniciar uma revolução russa")
     console.log("5 - Fugir (Sair do game)");
     getdef = agiota.defesa;
-    console.log(defesa2);
     jogada = jogada + 1;;
   }
 
@@ -80,7 +78,7 @@ function Main() {
 
 function Atacar(){
   console.log("Jorginho deu um tapão");
-  console.log("O Inimigo perdeu " + (hero.poder - getdef) + " de dano");
+  console.log("O Inimigo perdeu " + (hero.poder - getdef) + " de vida");
 }
 function Revolucao(){
   hero.revolucaorussa = true;
